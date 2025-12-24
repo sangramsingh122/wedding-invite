@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cormorant+Garamond:wght@300;400;600;700&family=Great+Vibes&family=Lato:wght@300;400;700&family=Noto+Sans:ital,wght@0,200;0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Hero Section: Floral Arch Redesign -->
+    <header class="hero floral-theme">
+        <div class="hero-arch-container animate">
+            <!-- Floral Decorations -->
+            <div class="floral-decoration tl">
+                <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="100" cy="100" r="40" fill="#FFB7C5" opacity="0.6" />
+                    <circle cx="140" cy="80" r="30" fill="#FFD1DC" opacity="0.5" />
+                    <circle cx="70" cy="60" r="25" fill="#FFC1CC" opacity="0.4" />
+                    <path d="M100 100 Q 150 50 200 80" stroke="#FF8DA1" stroke-width="2" opacity="0.4" />
+                    <path d="M100 100 Q 50 150 20 120" stroke="#FF8DA1" stroke-width="2" opacity="0.4" />
+                </svg>
+            </div>
+            <div class="floral-decoration br">
+                <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="100" cy="100" r="45" fill="#FFB7C5" opacity="0.6" />
+                    <circle cx="60" cy="120" r="35" fill="#FFD1DC" opacity="0.5" />
+                    <circle cx="130" cy="140" r="30" fill="#FFC1CC" opacity="0.4" />
+                    <path d="M100 100 Q 50 50 10 80" stroke="#FF8DA1" stroke-width="2" opacity="00.4" />
+                    <path d="M100 100 Q 150 150 180 120" stroke="#FF8DA1" stroke-width="2" opacity="0.4" />
+                </svg>
+            </div>
+
+            <div class="hero-arch-frame">
+                <div class="hero-floral-content">
+                    <p class="arch-sub-top sanskrit-text">शुभे मुहूर्ते सुमुहूर्ते संयोगः शुभदायकः।<br>भवन्तः सपरिवाराः
+                        सादरं यान्तु सन्निधिम्॥</p>
+                    <p class="arch-sub-top english-text">At this auspicious time, we warmly invite you with family to
+                        grace the occasion.</p>
+
+                    <div class="floral-names">
+                        <h1 class="groom-first-name">Sangram</h1>
+                        <span class="floral-ampersand">weds</span>
+                        <h1 class="bride-first-name">Roopal</h1>
+                    </div>
+
+                    <div class="floral-date-block">
+                        <span class="floral-date-day">10</span>
+                        <span class="floral-date-month">FEBRUARY</span>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <!-- Couple Section -->
+    <section id="couple" class="animate">
+        <div class="couple-container">
+            <div class="couple-card">
+                <div class="img-wrapper">
+                    <img src="assets/images/couple.jpg" alt="Happy Couple" class="profile-pic">
+                </div>
+                <h3>
+                    <span class="bride-name">Roopal</span>
+                    <span class="amp"> & </span>
+                    <span class="groom-name">Sangram</span>
+                </h3>
+                <p>With the divine blessings of the Almighty, and the love of our families,
+                    we humbly invite you to grace the occasion of our wedding.</p>
+                <br>
+                <h3>Join Us In Our Celebration</h3>
+                <p>"As we embark upon this holy bond of marriage, we seek your blessings, prayers, and loving presence.
+                    Your grace will sanctify our union and make this auspicious moment truly complete."</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Details -->
+    <section id="events" class="animate">
+        <h2>Wedding Events</h2>
+        <div id="event-list">
+            <!-- Dynamic events will be inserted here by app.js -->
+        </div>
+    </section>
+
+    <!-- Merged Contact and Countdown Section -->
+    <section id="merged-section" class="animate">
+        <div class="merged-container">
+            <!-- Contact Box -->
+            <div class="info-box contact-box">
+                <h2>Contact Groom's Family</h2>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <p class="phone">+91 97797 07910</p>
+                        <p class="phone">+91 95309 20575</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vertical Divider (Desktop only) -->
+            <div class="vertical-divider"></div>
+
+            <!-- Countdown Box -->
+            <div class="info-box countdown-box">
+                <h2>Counting Down To The Big Day</h2>
+                <div id="countdown">
+                    <div class="time-box">
+                        <span id="days">00</span>
+                        <span class="label">Days</span>
+                    </div>
+                    <div class="time-box">
+                        <span id="hours">00</span>
+                        <span class="label">Hours</span>
+                    </div>
+                    <div class="time-box">
+                        <span id="minutes">00</span>
+                        <span class="label">Minutes</span>
+                    </div>
+                    <div class="time-box">
+                        <span id="seconds">00</span>
+                        <span class="label">Seconds</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Gallery -->
+    <section id="gallery-section" class="animate">
+        <h2> Moments of Us </h2>
+        <div class="gallery">
+            <!-- Sample images for structure -->
+            <img src="assets/images/img1.jpg" alt="Gallery Image 1">
+            <img src="assets/images/img2.jpg" alt="Gallery Image 2">
+            <img src="assets/images/img3.jpg" alt="Gallery Image 3">
+            <img src="assets/images/img4.jpg" alt="Gallery Image 4">
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer>
+        <p>Thank You!</p>
+        <p class="small">Made with ❤️ for our wedding</p>
+    </footer>
+
+    <!-- Music Control -->
+    <button id="music-btn" title="Play Music">🎵</button>
+    <audio id="bg-music" loop>
+        <source src="assets/audio/wedding_music.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="js/app.js"></script>
+
+
+</body>
+
+</html>

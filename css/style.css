@@ -300,6 +300,54 @@ img {
         margin-right: auto;
         line-height: 1.4;
     }
+
+    /* Fix Couple Image Overflow */
+    .img-wrapper {
+        width: 250px;
+        height: 250px;
+        border-width: 4px;
+    }
+
+    .couple-card h3 {
+        font-size: 2rem;
+    }
+
+    .couple-card p {
+        font-size: 1.1rem;
+    }
+
+    /* Fix Time Box Overflow */
+    .time-box {
+        min-width: 60px;
+        padding: 5px;
+        flex: 1 1 60px;
+        /* Allow shrinking */
+    }
+
+    .time-box span:first-child {
+        font-size: 1.5rem;
+    }
+
+    .label {
+        font-size: 0.7rem;
+    }
+
+    /* Fix Event Card Overflow */
+    .event-card {
+        flex: 1 1 100%;
+        /* Stack fully */
+        max-width: 100%;
+        margin: 0 10px;
+    }
+
+    /* Fix Contact/Info Box Overflow */
+    .info-box {
+        min-width: 100%;
+    }
+
+    .contact-item .phone {
+        font-size: 1.5rem;
+    }
 }
 
 
@@ -773,16 +821,22 @@ img {
     max-height: 80vh;
     object-fit: contain;
     animation-name: zoom;
-    animation-duration: 0.6s;
+    animation-duration: 0.4s;
+    /* Faster but smoother */
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    /* Ease-out-like curve */
 }
 
 @keyframes zoom {
     from {
-        transform: scale(0)
+        transform: scale(0.9);
+        /* Start slightly smaller, not 0 */
+        opacity: 0;
     }
 
     to {
-        transform: scale(1)
+        transform: scale(1);
+        opacity: 1;
     }
 }
 
